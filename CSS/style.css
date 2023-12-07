@@ -4,9 +4,6 @@
 }
 
 body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #c9e4ca;
     color: white;
@@ -55,7 +52,7 @@ h1{
 }
 
 header{
-    height: 400px;
+    min-height: 400px;
     background-color: #3B6064;
     color: white;
 }
@@ -80,8 +77,8 @@ header p{
 }
 
 section .container{
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-around;
+    width: 90%;
 }
 
 .tea-card{
@@ -91,7 +88,13 @@ section .container{
     margin: 20px 10px;
     padding: 15px;
     flex: 1;
+    text-align: center;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.tea-card h2{
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 footer{
@@ -99,7 +102,6 @@ footer{
     min-height: 50px;
     font-size: 20px;
     padding: 15px 0 10px 0;
-    align-self: ;
 }
 
 footer .container{
@@ -109,4 +111,16 @@ footer .container{
 
 footer a{
     margin-bottom: 10px;
+}
+
+@media (max-width:800px){
+    header .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    section .container{
+        display: block;
+    }
 }
