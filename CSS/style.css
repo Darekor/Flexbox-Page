@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c9e4ca;
+    color: white;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+
+#navbar{
+    height: 75px;
+    background-color: #364958;
+    color: white;
+}
+
+h1{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#navbar .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar li{
+    margin-left: 15px;
+    font-size: large;
+    font-weight: bold;
+}
+
+header{
+    height: 400px;
+    background-color: #3B6064;
+    color: white;
+}
+
+header img{
+    max-width: 400px;
+}
+
+header .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h3{
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+header p{
+    font-size: 24px;
+}
+
+section .container{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tea-card{
+    background-color: #55828B;
+    color: white;
+    border-radius: 8px;
+    margin: 20px 10px;
+    padding: 15px;
+    flex: 1;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+footer{
+    background-color: #87BBA2;
+    min-height: 50px;
+    font-size: 20px;
+    padding: 15px 0 10px 0;
+    align-self: ;
+}
+
+footer .container{
+   flex-direction: column; 
+   align-items: center;
+}
+
+footer a{
+    margin-bottom: 10px;
+}
